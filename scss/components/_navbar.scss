@@ -1,0 +1,26 @@
+.navbar {
+    margin-left: 50px;
+
+    &__list {
+        display    : flex;
+        align-items: center;
+    }
+
+    &-item {
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover .navbar__link {
+            color: #fffd9c;
+        }
+    }
+
+    &__link {
+        font-size  : 1.2rem;
+        font-weight: 900;
+        line-height: 1.5;
+        white-space: nowrap;
+        padding    : 8px 15px;
+    }
+}

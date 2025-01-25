@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    height: 65px;
+
+    &__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.45;
+    }
+}

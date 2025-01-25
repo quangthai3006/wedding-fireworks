@@ -1,0 +1,33 @@
+$breakpoints: (xxl: 1400px,
+    xl: 1200px,
+    lg: 992px,
+    md: 768px,
+    sm: 576px,
+);
+
+$display-values: block,
+flex,
+grid,
+none;
+
+
+@mixin make-display($breakpoint: null) {
+    @each $display in $display-values {
+        $infix: if($breakpoint, "-#{$breakpoint}", "");
+
+        .d#{$infix}-#{$display} {
+            display: $display;
+        }
+
+    }
+}
+
+@include make-display();
+
+
+@each $breakpoint,
+$dimension in $breakpoints {
+    @media (max-width: ($dimension - 0.02)) {
+        @include make-display($breakpoint);
+    }
+}
