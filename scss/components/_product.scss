@@ -10,5 +10,66 @@
     &__heading {
         color: #fff;
     }
-}
 
+    &__body {
+        margin-top: 50px;
+    }
+
+    &__list {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap                  : 30px;
+    }
+
+    &-item {
+
+        &:hover .product__img {
+            transform: scale(1.1);
+
+        }
+    }
+
+    &__images {
+        height       : 300px;
+        overflow     : hidden;
+        border-radius: 12px 12px 0px 0px;
+
+    }
+
+    &__img {
+        display   : block;
+        width     : 100%;
+        height    : 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+
+    }
+
+
+    &__info {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        text-align    : center;
+        background    : #fff;
+        min-height    : 150px;
+        padding       : 20px;
+        border-radius : 0px 0px 12px 12px;
+
+    }
+
+    &__name {
+        color        : #000;
+        font-size    : 1.2rem;
+        font-weight  : 700;
+        line-height  : 1.2;
+        margin-bottom: auto;
+
+
+        display           : -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow          : hidden;
+        text-overflow     : ellipsis;
+    }
+}

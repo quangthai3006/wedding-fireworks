@@ -1,0 +1,100 @@
+.policy {
+    margin: 50px 0;
+    color : #000;
+
+    &__body {
+        margin-top: 50px;
+    }
+
+    &__list {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap                  : 30px;
+    }
+
+    &-item {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        text-align    : center;
+        padding       : 20px;
+        min-height    : 276px;
+        user-select   : none;
+        border        : 1px solid #fff;
+
+        &:hover {
+            border-color: #ccc;
+        }
+
+        &__icon {
+            width        : 80px;
+            height       : 80px;
+            flex-shrink  : 0;
+            border-radius: 10px;
+            filter       : brightness(0) saturate(100%) invert(44%) sepia(98%) saturate(7342%) hue-rotate(353deg) brightness(94%) contrast(127%);
+        }
+
+        &__heading {
+            color      : #800606;
+            font-weight: 700;
+            margin-top : 10px;
+        }
+
+        &__desc {
+            width      : 300px;
+            margin-top : 20px;
+            font-size  : 1.1rem;
+            line-height: 1.1;
+            font-weight: 400;
+        }
+    }
+
+    &-footer {
+        margin-top: 50px;
+        padding   : 50px 0;
+        color     : #fff;
+        background: #800606;
+
+        &__list {
+            display              : grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        &__item {
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+            text-align    : center;
+
+            &-wrap {
+                display      : flex;
+                text-align   : center;
+                width        : 85px;
+                height       : 85px;
+                border-radius: 50%;
+                background   : #fff;
+            }
+
+        }
+
+        &__icon {
+            margin: auto;
+            width : 65%;
+            height: 65%;
+            filter: brightness(0) saturate(100%) invert(8%) sepia(85%) saturate(5243%) hue-rotate(21deg) brightness(99%) contrast(117%);
+        }
+
+        &__heading {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        &__desc {
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}
