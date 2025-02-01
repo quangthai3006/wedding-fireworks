@@ -17,3 +17,53 @@
         cursor : pointer;
     }
 }
+
+.dots {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 10px;
+    text-align     : center;
+    margin-top     : 20px;
+}
+
+.dot {
+    display         : inline-block;
+    width           : 10px;
+    height          : 10px;
+    background-color: #D6D6D6;
+    border-radius   : 50%;
+    cursor          : pointer;
+
+    &.active {
+        background-color: #808080;
+    }
+}
+
+.cta-arrow {
+    position       : absolute;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border         : 2px solid #fe2626;
+    width          : 33px;
+    height         : 33px;
+    border-radius  : 50%;
+    filter         : brightness(0) saturate(100%) invert(26%) sepia(67%) saturate(5682%) hue-rotate(350deg) brightness(106%) contrast(99%);
+
+
+    &-left {
+        top : 170px;
+        left: 20px;
+    }
+
+    &-right {
+        top  : 170px;
+        right: 20px;
+    }
+}
+
+.arrow-icon {
+    width : 20px;
+    height: 20px;
+}

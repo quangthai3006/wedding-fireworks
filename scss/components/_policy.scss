@@ -1,6 +1,6 @@
 .policy {
-    margin: 50px 0;
-    color : #000;
+    margin-top: 50px;
+    color     : #000;
 
     &__body {
         margin-top: 50px;
@@ -86,14 +86,14 @@
         }
 
         &__heading {
-            margin-top: 20px;
-            font-size: 1.2rem;
+            margin-top : 20px;
+            font-size  : 1.2rem;
             font-weight: 700;
         }
 
         &__desc {
-            margin-top: 20px;
-            font-size: 1rem;
+            margin-top : 20px;
+            font-size  : 1rem;
             font-weight: 400;
         }
     }

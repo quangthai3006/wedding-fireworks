@@ -1,0 +1,69 @@
+.feedback {
+    padding   : 50px 0;
+    color     : #000;
+    background: #f9f9f9;
+
+    &__body {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    &__list {
+        display              : grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap                  : 30px;
+    }
+
+    &-item {
+        text-align         : center;
+        padding            : 20px;
+        border-radius      : 12px;
+        background         : #f4f4f4;
+        box-shadow         : rgb(217, 217, 217) 0px 15px 20px -15px;
+        // box-shadow   : 0px 65px 80px -46px rgba(226, 238, 249, 0.60);
+        // box-shadow      : 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+
+        &__avatar {
+            width        : 148px;
+            height       : 148px;
+            border-radius: 50%;
+            object-fit   : cover;
+        }
+
+        &__name {
+            color      : #fe2626;
+            font-size  : 1.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-top : 20px;
+        }
+
+        &__desc {
+            margin-top : 20px;
+            font-style : italic;
+            font-size  : 1rem;
+            line-height: 1.3;
+            font-weight: 400;
+        }
+    }
+
+    &__cta {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        gap            : 15px;
+        margin         : 40px auto 0;
+        text-align     : center;
+        min-width      : 267px;
+        font-size      : 1.3rem;
+        height         : 50px;
+        line-height    : 1.5;
+
+
+        &-icon {
+            width : 16px;
+            height: 16px;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(7333%) hue-rotate(121deg) brightness(133%) contrast(97%);
+        }
+    }
+}
