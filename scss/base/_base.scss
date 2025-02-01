@@ -10,9 +10,13 @@ html {
 }
 
 body {
-    font-size : 1.6rem;
+    font-size  : 1.6rem;
     font-family: "Roboto", serif;
     color      : #fff;
+}
+
+canvas {
+    position: absolute;
 }
 
 a {
@@ -27,12 +31,14 @@ button {
     background: transparent;
 }
 
-button, select, textarea, input {
+button,
+select,
+textarea,
+input {
     font-family: inherit;
-    color: inherit;
+    color      : inherit;
 }
 
 .icon {
     filter: var(--icon-color)
 }
-

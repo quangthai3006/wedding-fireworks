@@ -3,6 +3,10 @@
     color     : #fff;
     background: #800606;
 
+    &__logo {
+        display: inline-flex;
+    }
+
     &__desc {
         margin-top : 20px;
         font-size  : 1rem;
